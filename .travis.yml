@@ -3,6 +3,7 @@ cache: bundler
 sudo: required
 before_install:
         - sudo update-ca-certificates
+        - sudo apt install curl
 install:
         - bundle install
         - bundle exec rake build:production
