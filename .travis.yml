@@ -1,5 +1,8 @@
 language: ruby
 cache: bundler
+sudo: required
+before_install:
+        - sudo update-ca-certificates
 install:
         - bundle install
         - bundle exec rake build:production

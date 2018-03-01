@@ -11,7 +11,7 @@ $testOpts = {
   # Automatically add extension (e.g. .html) to file paths, to allow extensionless URLs
   :assume_extension => true,
   # LinkedIn blocks connections from html-proofer, ignore 999 error
-  :http_status_ignore => [999]
+  :http_status_ignore => [999],
 }
 
 task :default => ["serve:development"]
