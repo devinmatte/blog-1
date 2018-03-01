@@ -1,0 +1,6 @@
+language: ruby
+cache: bundler
+install:
+        - bundle install
+        - bundle exec rake build:production
+script: bundle exec rake test
